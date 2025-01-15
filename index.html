@@ -9,11 +9,25 @@
 </head>
 
 <body>
-  <header>
-    <h1>MoviesDB</h1>
-    <input type="text" id="searchBar" placeholder="Search movies...">
-  </header>
-  <script src="./script/app.js"></script>
+  <div class="container">
+    <header>
+      <h1>MoviesDB</h1>
+      <input type="text" id="searchBar" placeholder="Search movies...">
+    </header>
+    <main>
+      <section id="movieList"></section>
+      <section id="movieDetails" class="hidden"></section>
+      <section id="favorites" class="hidden"></section>
+    </main>
+    <footer>
+      <button id="showFavorites">My Favorites</button>
+    </footer>
+  </div>
+  <script src="scripts/api.js"></script>
+  <script src="scripts/movieList.js"></script>
+  <script src="scripts/movieDetails.js"></script>
+  <script src="scripts/favorites.js"></script>
+  <script src="scripts/app.js"></script>
 </body>
 
 </html>
