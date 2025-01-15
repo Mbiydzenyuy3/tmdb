@@ -1,5 +1,5 @@
 /* Movie List Styles */
-#movieList {
+#movie-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 2rem;
@@ -30,7 +30,7 @@
 }
 
 /* Movie Details Styles */
-#movieDetails {
+#movie-details {
   background-color: #fff;
   border-radius: 5px;
   padding: 2rem;
@@ -38,15 +38,15 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#movieDetails h2 {
+#movie-details h2 {
   margin-bottom: 1rem;
 }
 
-#movieDetails p {
+#movie-details p {
   margin-bottom: 0.5rem;
 }
 
-#movieDetails button {
+#movie-details button {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   background-color: #333;
@@ -69,7 +69,7 @@
   margin-bottom: 1rem;
 }
 
-#showFavorites {
+#show-favorites {
   padding: 0.5rem 1rem;
   background-color: #fff;
   color: #333;
