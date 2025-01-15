@@ -4,6 +4,10 @@ header {
   color: #fff;
   padding: 1rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1248px;
 }
 
 h1 {
