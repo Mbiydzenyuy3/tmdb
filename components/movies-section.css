@@ -68,3 +68,12 @@
 #favorites h2 {
   margin-bottom: 1rem;
 }
+
+#showFavorites {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
