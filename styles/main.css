@@ -58,7 +58,7 @@ main {
 .movie {
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px #001a;
   overflow: hidden;
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -85,7 +85,7 @@ main {
   border-radius: 5px;
   padding: 2rem;
   margin-top: 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px #001a;
 }
 
 #movie-details h2 {
@@ -112,7 +112,7 @@ main {
   border-radius: 5px;
   padding: 2rem;
   margin-top: 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px #001a;
 }
 
 #favorites h2 {
