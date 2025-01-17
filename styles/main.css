@@ -1,0 +1,182 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+input[type="search"]:focus {
+  outline: none;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+#search-bar {
+  width: 0;
+  transition: 1s linear;
+  color: #fff;
+  padding: 0.5em;
+}
+
+#search-bar:focus {
+  width: 250px;
+  animation: width .3s ease 2s;
+}
+
+/* Main Content Styles */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Movie List Styles */
+#movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.movie {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #001a;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.movie:hover {
+  transform: translateY(-5px);
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+}
+
+.movie h2 {
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Movie Details Styles */
+#movie-details {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 5px #001a;
+}
+
+#movie-details h2 {
+  margin-bottom: 1rem;
+}
+
+#movie-details p {
+  margin-bottom: 0.5rem;
+}
+
+#movie-details button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* navigation */
+
+nav {
+  display: none;
+}
+
+/* Favorites Styles */
+#favorites {
+  display: flex;
+  flex-direction: column;
+}
+
+#favorites h2 {
+  margin-bottom: 1rem;
+}
+
+#show-favorites {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #334;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #favorites {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 2px 5px #001a;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  nav ul li a:hover {
+    color: #080;
+  }
+
+}

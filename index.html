@@ -5,11 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/main.css">
+  <!-- <link rel="import" href="./components/header.css">
+  <link rel="import" href="./components/movies-section.css">
+  <link rel="import" href="./components/footer.css"> -->
   <title>TMDB</title>
 </head>
 
 <body>
-  <script src="./script/app.js"></script>
+
+  <header>
+    <h1>MoviesDB</h1>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="movie-details">About</a></li>
+        <li><a href="">Favorites</a></li>
+      </ul>
+    </nav>
+    <input type="search" id="search-bar" placeholder="Search movies...">
+  </header>
+  <main>
+    <section id="movie-list"></section>
+    <section id="movie-details" class="hidden"></section>
+    <section id="favorites" class="hidden"></section>
+  </main>
+  <footer>
+    <button id="show-favorites">My Favorites</button>
+  </footer>
+
+  <script src="script/api.js"></script>
+  <script src="script/movie-list.js"></script>
+  <script src="script/movie-details.js"></script>
+  <script src="script/favorites.js"></script>
+  <script src="script/app.js"></script>
 </body>
 
 </html>
