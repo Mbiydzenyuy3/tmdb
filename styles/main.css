@@ -25,20 +25,29 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1248px;
+  max-width: 100%;
 }
 
 h1 {
   margin-bottom: 1rem;
 }
 
+input[type="search"]:focus {
+  outline: none;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
 #search-bar {
-  width: 100%;
-  max-width: 500px;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
+  width: 0;
+  transition: 1s linear;
+  color: #fff;
+  padding: 0.5em;
+}
+
+#search-bar:focus {
+  width: 250px;
+  animation: width .3s ease 2s;
 }
 
 /* Main Content Styles */
@@ -106,13 +115,16 @@ main {
   cursor: pointer;
 }
 
+/* navigation */
+
+nav {
+  display: none;
+}
+
 /* Favorites Styles */
 #favorites {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 2rem;
-  margin-top: 2rem;
-  box-shadow: 0 2px 5px #001a;
+  display: flex;
+  flex-direction: column;
 }
 
 #favorites h2 {
@@ -136,4 +148,35 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  #favorites {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 2px 5px #001a;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  nav ul li a:hover {
+    color: #080;
+  }
+
 }

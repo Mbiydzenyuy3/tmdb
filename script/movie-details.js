@@ -1,4 +1,4 @@
-async function showMovieDetails(movieId) {
+async function showMovieDetails (movieId) {
   const movie = await fetchMovies(`/movie/${movieId}`)
   const detailsSection = document.getElementById('movie-details')
   detailsSection.innerHTML = `

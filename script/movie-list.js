@@ -1,4 +1,4 @@
-function displayMovies(movies) {
+function displayMovies (movies) {
   const movieList = document.getElementById('movie-list')
   movieList.innerHTML = ''
 
@@ -8,7 +8,7 @@ function displayMovies(movies) {
   })
 }
 
-function createMovieElement(movie) {
+function createMovieElement (movie) {
   const movieElement = document.createElement('div')
   movieElement.classList.add('movie')
   movieElement.innerHTML = `
